@@ -2,9 +2,9 @@ from google.cloud import speech_v1
 from google.cloud.speech_v1 import enums
 import io
 
-client = speech_v1.SpeechClient.from_service_account_json('<path-to-credentials-file>.json')
+client = speech_v1.SpeechClient.from_service_account_json('</home/marlouie/EceProj/api.json>.json')
 
-with io.open('<path-to-audio-file>', 'rb') as audio_file:
+with io.open('</home/marlouie/fili.wav>', 'rb') as audio_file:
     content = audio_file.read()
 
 audio = speech_v1.RecognitionAudio(content=content)
